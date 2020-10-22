@@ -1,0 +1,139 @@
+@import "../_variables.scss";
+
+//* * Section - Pricing * *//
+
+
+.old-price {
+    text-decoration: line-through;
+    font-size: 0.5em;
+    top: -0.5em;
+    position: relative;
+}
+
+#pricing {
+    margin-top: 5em;
+
+    .heading-subtitle {
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-size: 0.9em;
+    }
+
+    .feature-mark {
+        text-transform: uppercase;
+        font-size: 0.75em;
+        line-height: 1.4;
+        font-weight: 600;
+        color: #fff;
+        background: $skygreen;
+        display: inline-block;
+        padding: 0.5em 1.5em 0.5em 0.5em;
+        margin-bottom: 1em;
+        margin-top: -1em;
+        position: absolute;
+        margin-left: -2.75em;
+    }
+
+    .feature-mark::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-right: 9px solid #fff;
+        border-top: 12px solid transparent;
+        border-bottom: 12px solid transparent;
+    }
+
+    &>.container {
+        &>.row {
+            &>div {
+                padding: 1em;
+
+                &>.pricing-card {
+                    padding: 2em;
+                    background: #fff;
+                }
+            }
+
+            .price-container {
+                font-weight: 700;
+                font-size: 3em;
+
+                .price {
+                    display: inline-block;
+                }
+
+                .old-price {
+                    font-size: 0.5em;
+                    top: -1em;
+                }
+
+                .price-option {
+                    display: inline-block;
+                    width: 100%;
+                }
+            }
+
+            .optimal .price-container {
+                padding-top: 0.75em;
+            }
+        }
+    }
+
+    .optimal {
+        margin-top: -3em;
+
+        .pricing-card {
+            border: 10px solid $skygreen;
+        }
+    }
+
+    .pricing-list {
+        list-style: none;
+
+        .pricing-item {
+            font-size: 0.75em;
+            margin-bottom: 1em;
+            line-height: 1.5;
+            color: #ccc;
+            position: relative;
+
+            & .feature-text::before {
+                content: '\43';
+                display: inline-block;
+                font-family: "custom-icon-font" !important;
+                font-style: normal !important;
+                font-weight: normal !important;
+                font-variant: normal !important;
+                text-transform: none !important;
+                line-height: 1;
+                color: #ccc;
+                position: absolute;
+                top: 50%;
+                left: -2em;
+                transform: translate(0, -50%);
+            }
+
+            &.item-available {
+                color: $darkgrey;
+            }
+
+            &.item-available .feature-text::before {
+                content: '\48';
+                display: inline-block;
+                font-family: "custom-icon-font" !important;
+                font-style: normal !important;
+                font-weight: normal !important;
+                font-variant: normal !important;
+                text-transform: none !important;
+                line-height: 1;
+                color: $skygreen;
+                position: absolute;
+                top: 50%;
+                left: -2em;
+                transform: translate(0, -50%);
+            }
+        }
+    }
+}

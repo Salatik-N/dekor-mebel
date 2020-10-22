@@ -1,0 +1,82 @@
+@import "../_variables.scss";
+
+//* * Service Intro Features * *//
+
+#service-intro {
+    color: #fff;
+
+    .get-consultation {
+        margin-bottom: 4em;
+        width: 100%;
+    }
+}
+
+.service-intro {
+    &__heading-pre {
+        text-transform: uppercase;
+        font-size: 0.75em;
+        letter-spacing: 1px;
+        width: 100%;
+        text-align: center;
+        color: #fff;
+    }
+
+    &__heading-main {
+        font-size: 4em;
+        font-weight: 700;
+        padding: 0.25em;
+        width: 100%;
+        text-align: center;
+        color: #fff;
+    }
+
+    &__heading-sub {
+        font-size: 1.15em;
+        font-weight: 600;
+        padding-bottom: 1.5em;
+        width: 100%;
+        text-align: center;
+        color: #fff;
+    }
+
+    &__old-price {
+        font-size: 0.7em !important;
+        display: inline-block;
+        top: -0.5em;
+        position: relative;
+        padding-left: 0.5em;
+        text-decoration: line-through;
+    }
+}
+
+.service-feature {
+    color: #fff;
+    text-align: center;
+
+    &__icon {
+        border: 0;
+        width: 100%;
+        height: auto;
+        font-size: 4em;
+        display: inline-block;
+        margin-top: 0.5em;
+
+        &::before {
+            background: $skygreen;
+            border-radius: 50%;
+            padding: 0.15em;
+        }
+    }
+
+    &__title {
+        font-weight: 700;
+        text-align: center;
+        padding: 1.5em;
+    }
+
+    &__desc {
+        text-align: center;
+        font-size: 0.8em;
+        line-height: 2;
+    }
+}

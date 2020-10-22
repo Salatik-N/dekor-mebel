@@ -1,0 +1,22 @@
+/*!
+Theme Name: SkyWard
+Version: 0.0.6
+Description: Theme for SkyWard.pro
+Author: SkyWard.pro
+Author URI: https://skyward.pro
+Text Domain: skyward
+*/
+ 
+// Variables
+@import "assets/scss/_variables.scss";
+@import "assets/utils/sass-space/_sass-space.scss";
+
+// Theme styles
+@import "assets/scss/_fonts.scss";
+@import "assets/scss/_common.scss";
+@import "assets/scss/_header.scss";
+@import "assets/scss/_pages.scss";
+@import "assets/scss/_footer.scss";
+
+@import "assets/scss/plugins/_skyfolio.scss";
+@import "assets/scss/plugins/_skymonials.scss";

@@ -1,0 +1,200 @@
+@import "../_variables.scss";
+
+//* * Section - Stages * *//
+
+#stages {
+    .h2 {
+        padding: 0.5em;
+        display: block;
+        color: #fff;
+    }
+}
+
+.stage {
+    padding-top: 4.5em;
+
+    &__marked-text {
+        text-transform: uppercase;
+        font-size: 0.85em;
+        letter-spacing: 1px;
+        padding: 0.25em 0.5em;
+        background: $skygreen;
+        color: #fff;
+    }
+
+    &__item {
+        padding-top: 4.5em;
+    }
+
+    &__number {
+        position: relative;
+        margin-bottom: 1.5em;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 2em;
+        width: 2em;
+        line-height: 2em;
+        color: #fff;
+        border-radius: 50%;
+        text-align: center;
+        z-index: 3;
+
+        &::before {
+            width: 4.5em;
+            height: 4.5em;
+            opacity: .3;
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            background: inherit;
+        }
+
+        &::after {
+            width: 3.5em;
+            height: 3.5em;
+            opacity: .7;
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+        }
+
+        &_red {
+            z-index: 3;
+        }
+
+        &_red::before{
+            background: $skyred;            
+            z-index: 1;
+        }
+
+        &_red::after {
+            background: $skyred;            
+            z-index: 2;
+        }
+
+        &_yellow {
+            z-index: 3;
+        }
+
+        &_yellow::before {
+            background: $skyyellow;
+            z-index: 1;
+        }
+        
+        &_yellow::after {
+            background: $skyyellow;
+            z-index: 2;
+        }
+
+        &_green {
+            z-index: 3;
+        }
+
+        &_green::before {
+            background: $skygreen;
+            z-index: 1;
+        }
+
+        &_green::after {
+            background: $skygreen;
+            z-index: 2;
+        }
+    }
+
+    &__count {
+        position: relative;
+        border-radius: 50%;        
+
+        &_red {
+            background: $skyred;
+            border-radius: 50%;
+            position: relative;
+            z-index: 999;
+        }
+
+        &_yellow {
+            background: $skyyellow;
+            border-radius: 50%;
+            position: relative;
+            z-index: 999;
+        }
+
+        &_green {
+            background: $skygreen;
+            border-radius: 50%;
+            position: relative;
+            z-index: 999;
+        }
+    }
+
+    &__content {
+        position: relative;
+        text-align: center;
+        margin: 0 auto;
+        background: #fff;
+        padding: 2em;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+        filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.06));
+        line-height: 1.75;
+        margin: 0 2em;
+
+        &::before {
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            content: '';
+            border-bottom: 13px solid #fff;
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+        }
+    }
+
+    &__heading {
+        width: 100%;
+        font-size: 1em;
+        display: inline-block;
+        margin-bottom: 0.75em;
+        line-height: 1.5;
+    }
+
+    &__content-desc {
+        font-size: 0.8em;
+        color: $lightgrey;
+        line-height: 2;
+    }
+
+    &__line {
+        height: 1px;
+        background: white;
+        width: 80%;
+        position: absolute;
+        right: 75%;
+        top: -3.5em;
+        opacity: 0.7;
+    }
+
+    @media screen and (max-width: 575px) {
+        &__line {
+            display: none;
+        }
+
+        &__item {
+            padding-top: 4.5em;
+        }
+
+        &__content-desc {
+            font-size: 0.9em;
+        }
+
+        &__heading {
+            font-size: 1.2em;
+        }
+    }
+}

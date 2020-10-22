@@ -1,0 +1,81 @@
+@import "../_variables.scss";
+
+//* * Contacts Section * *//
+
+#contacts {
+
+    .bottom-line::after {
+        margin-bottom: 0.25em;
+    }
+
+    .heading-subtitle {
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-size: 0.8em;
+        padding-bottom: 2em;
+        display: inline-block;
+    }
+
+    .sale-text {
+        color: #fff;
+        font-size: 2em;
+        font-weight: 700;
+        display: inline-block;
+    }
+
+    .contacts-container {
+        background: $skygreen;
+        padding: 4em 3em;
+        color: #fff;
+
+        a {
+            color: #fff;
+        }
+
+        .h2 {
+            font-size: 2.5em;
+            padding-bottom: 0.5em;
+            display: inline-block;
+        }
+
+        .contact {
+            padding: 0.5em 0;
+            font-weight: 700;
+            font-size: 1.2em;
+
+            .icon {
+                font-size: 1.35em;
+                padding-right: 0.5em;
+            }
+        }
+    }
+}
+
+//* * Contact Form * *//
+
+.wpcf7-form-control {
+    padding: 1em;
+    font-size: 0.9em;
+    width: 100%;
+    border: 0;
+    color: $lightgrey;
+    box-sizing: border-box;
+}
+
+.wpcf7-submit {
+    width: 100%;
+    background: $skygreen;
+    padding: 1em 2em;
+    border-radius: 0.25em;
+    color: #fff;
+
+    &:hover {
+        transform: translateY(-3px);
+    }
+}
+
+.wpcf7-response-output {
+    border-radius: 0.25em;
+    background: #fff;
+}

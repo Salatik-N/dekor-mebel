@@ -1,0 +1,35 @@
+@import "../_variables.scss";
+
+.ad-promo {
+    &__heading {
+        &_first {
+            color: #fff;
+            text-align: center;
+            display: inline-block;
+            width: 100%;
+            font-size: 3em;
+            font-weight: 700;
+        }
+    }
+
+    &__service-image {
+        margin-bottom: 2em;
+    }
+
+    &__service-heading {
+        display: inline-block;
+        width: 100%;
+        font-size: 2em;
+        font-weight: 700;
+        color: #fff;
+        padding-bottom: 0.75em;
+    }
+
+    &__service-desc {
+        display: inline-block;
+        color: #fff;
+        line-height: 2;
+        margin-bottom: 2em;
+
+    }
+}

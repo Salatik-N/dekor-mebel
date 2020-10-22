@@ -1,0 +1,55 @@
+@import "../_variables.scss";
+
+//* * Section - CTA * *//
+
+#cta {
+    color: #fff;
+    background: $skygreen;
+}
+
+.cta {
+    padding-top: 2em;
+    padding-bottom: 2em;
+
+    &__section-right {
+        display: flex;
+        justify-content: center;
+
+        .get-consultation {
+            align-self: center;
+        }
+    }
+
+    &__desc {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__heading-offer-pre {
+        text-transform: uppercase;
+        font-size: 0.75em;
+        letter-spacing: 1px;
+        padding-bottom: 0.75em;
+        display: inline-block;
+    }
+
+    &__heading-offer-main {
+        @include h2;
+        display: inline-block;
+    }    
+
+    &__heading-main {
+        @include h5;
+        font-weight: 700;
+        display: inline-block;
+        width: 100%;
+        padding-bottom: 0.25em;
+    }
+    
+    &__heading-sub {
+        padding-top: 0.5em;
+        font-size: 1.1em;
+        padding-bottom: 0.5em;
+        display: inline-block;
+    }
+}

@@ -1,0 +1,45 @@
+@import "../_variables.scss";
+
+.promotion-seo {
+    &__heading {
+        &_first {
+            font-size: 3em;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        @media only screen and (min-width: 577px) {
+            &_first::after {
+                margin-left: 0;
+            }
+        }
+
+        &_second {
+            font-weight: 700;
+            color: #fff;
+            line-height: 1.75;
+        }
+    }
+
+    &__todo-list {
+        color: #fff;
+        line-height: 1.5;
+        list-style: none;
+    }
+
+    &__todo-list li {
+        margin-bottom: 1em;
+    }
+
+    &__todo-list li:before {
+        content: "\48";
+        font-family: "custom-icon-font" !important;
+        font-family: "custom-icon-font" !important;
+        font-style: normal !important;
+        font-weight: normal !important;
+        display: block;
+        float: left;
+        width: 1.2em;
+        color: #fff;
+    }
+}

@@ -1,0 +1,36 @@
+@import "../_variables.scss";
+
+//* * Section - Specialization * *//
+
+#specialization {
+    color: #fff;
+}
+
+.specialization {
+    &__heading {
+
+        &_primary {
+            font-weight: 700;
+            display: block;
+            padding-bottom: 0.75em;
+            color: #fff;
+            font-size: 2em;
+        }
+
+        &_secondary {
+            color: #fff;
+            font-weight: 700;
+            font-size: 1.25em;
+            padding-bottom: 0.75em;
+            display: block;
+        }
+
+    }
+
+    &__text {
+        color: #fff;
+        font-size: 0.8em;
+        line-height: 2;
+    }
+
+}

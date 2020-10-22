@@ -1,0 +1,103 @@
+@import "../_variables.scss";
+
+//* * Homepage Intro * *//
+
+#home-intro {
+    color: #fff;
+    margin-top: 3em;
+}
+
+.home-intro {
+
+    &__heading {
+        &_seconary {
+            color: #fff;
+            font-size: 0.9em;
+        }
+    }
+
+    &__feature {
+        padding-bottom: 1em;
+        display: flex;
+    }
+
+    &__content {
+        width: 80%;
+        float: left;
+    }
+
+    &__feature-desc {
+        font-size: 0.75em;
+        line-height: 2;
+    }
+
+    &__icon {
+        border: 0;
+        height: auto;
+        font-size: 5em;
+        display: inline-block;
+        padding-right: 0.15em;
+
+        &::before {
+            font-size: 0.5em;
+        }
+    }
+}
+
+.typewrite {
+    width: 100%;
+    display: block;
+    z-index: 99999;
+    position: relative;
+    display: inline;
+    height: 2em;
+    padding-right: 0.25em;
+
+    &__sub {
+        font-size: 1.8em;
+        font-weight: 600;
+        margin: 0.3em 0 1em 0.05em;
+        display: block;
+
+        @media only screen and (min-width: 540px) {
+            font-size: 1.6em;
+        }
+
+        @media only screen and (min-width: 768px) {
+            font-size: 1.8em;
+            font-weight: 700;
+        }
+
+        @media only screen and (min-width: 992px) {
+            font-size: 2.2em;
+        }
+
+        @media only screen and (min-width: 1200px) {
+            font-size: 3em;
+        }
+    }
+}
+
+.typewrite,
+.typed-cursor {
+    min-height: 2em;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: 800;
+
+    @media only screen and (min-width: 540px) {
+        font-size: 2.2em;
+    }
+
+    @media only screen and (min-width: 768px) {
+        font-size: 3em;
+    }
+
+    @media only screen and (min-width: 992px) {
+        font-size: 4em;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        font-size: 5em;
+    }
+}

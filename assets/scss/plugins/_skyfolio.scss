@@ -1,0 +1,79 @@
+@import "../_variables.scss";
+
+//* * Modules - SkyFolio * *//
+
+.skyfolio-page {
+    color: #fff;
+    line-height: 2;
+
+    &__heading-main {
+        line-height: 1.5;
+        margin: 0;
+        padding: 1em 0;
+        font-size: 2em;
+
+        @media screen and (max-width: 576px) {
+            margin-top: -2em;
+        }
+    }
+
+    &__preview-image,
+    &__partner-logo {
+        width: 100%;
+    }
+
+    .button {
+        display: inline-block;
+        padding: 0.5em 2em;
+        margin: 1em 0;
+    }
+}
+
+.skyfolio-items {
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+}
+
+.skyfolio-item {
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+
+    &:hover {
+        transform: translateY(-10px);
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        display: flex;
+    }
+
+
+    &__content {
+        background: #fff;
+        border-top: 6px solid $skygreen;
+        text-align: center;
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__link,
+    &__link:hover {
+        font-weight: 600;
+        color: $darkgrey;
+        font-size: 1em;
+        padding: 1.25em 1em;
+    }
+}
+
+.portfolio {
+    &__page-title {
+        color: #fff;
+        font-size: 3em;
+        text-align: center;
+    }
+}

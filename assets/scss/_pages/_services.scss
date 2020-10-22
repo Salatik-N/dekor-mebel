@@ -1,0 +1,75 @@
+@import "../_variables.scss";
+
+//* * Section - Services * *//
+
+.services {
+    &__section-heading {
+        font-size: 2em;
+        color: #fff;
+        font-weight: 700;
+    }
+}
+
+.service-card {
+    background: #fff;
+    color: $darkgrey;
+    padding: 0.65em;
+    margin-bottom: 1.5em;
+    transform: translateY(0.25em);
+    animation: moveVertical 0.65s ease forwards;
+    @include transition(all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1));
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 2px 30px rgba(0, 0, 0, 0.1);
+        border: 0;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        border: 2px solid #eee;
+        padding: 1.25em;
+        @include transition(all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1));
+    }
+
+    &:hover .content {
+        border: 2px solid $skygreen;
+    }
+
+    &__icon {
+        font-size: 4em;
+        display: inline-block;
+        color: $skygreen;
+    }
+    
+    &__heading {
+        font-size: 1em;
+        font-weight: 700;
+        line-height: 1.5em;
+        padding: 0.5em 0 0 0;
+    }
+
+    &__desc {
+        color: $lightgrey;
+        font-size: 0.8em;
+        line-height: 2em;
+        font-weight: 600;
+    }
+
+    &__view-more {
+        display: flex;
+        align-items: center;
+        color: $darkgrey;
+        font-size: 0.85em;
+        padding: 1em 0;
+    }
+
+    &__arrow {
+        color: $skygreen;
+        padding-left: 1.25em;
+        font-size: 0.85em;
+    }
+}
