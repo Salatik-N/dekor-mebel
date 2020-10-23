@@ -1,2 +1,1 @@
-# skyward
-SkyWard.pro Theme
+# Dekor-Mebel
